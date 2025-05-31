@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: minha-app
-        image: alex282874/nome-da-imagem:latest
+        image: alex282874/app_build_cont:latest
         ports:
         - containerPort: 80
