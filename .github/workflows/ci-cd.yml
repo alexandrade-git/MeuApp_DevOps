@@ -24,6 +24,11 @@ jobs:
     - name: Push para o Docker Hub
       run: docker push alex282874/app_build_cont:latest
 
+    - name: Login no Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
     - name: Configura kubectl
       uses: azure/setup-kubectl@v3
 
