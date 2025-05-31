@@ -35,8 +35,8 @@ jobs:
     - name: Acessar o cluster AKS
       uses: azure/aks-set-context@v3
       with:
-        resource-group: aks_lab_estudos
-        cluster-name: aks_devops
+        resource-group: rg-aks-dev
+        cluster-name: aks-dev-cluster
 
     - name: Aplicar manifestos no Kubernetes
       run: |
